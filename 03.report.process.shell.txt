@@ -1,0 +1,32 @@
+Report 3
+Command: ps -U root -u root u
+Output:
+root      5619  0.0  0.0      0     0 ?        D    03:22   0:00 [kworker/u16:3+
+root      5677  0.0  0.0      0     0 ?        I    03:27   0:00 [kworker/u16:1-
+root      5686  0.0  0.0      0     0 ?        I    03:29   0:00 [kworker/1:1-ev
+root      5714  0.0  0.0      0     0 ?        I    03:33   0:00 [kworker/0:1-ev
+root      5771  0.0  0.0      0     0 ?        I    03:36   0:00 [kworker/u16:2-
+root      5779  0.0  0.0      0     0 ?        I    03:37   0:00 [kworker/2:0]
+root      5780  0.0  0.0      0     0 ?        I    03:37   0:00 [kworker/1:0-cg
+root      5781  0.0  0.0      0     0 ?        I    03:37   0:00 [kworker/1:2]
+root      5810  0.0  0.0      0     0 ?        I    03:39   0:00 [kworker/0:0-cg
+root      5811  0.0  0.0      0     0 ?        I    03:39   0:00 [kworker/0:2]
+
+Command: firefox
+Output: Open firefox
+
+Command: ps man | grep firefox | awk '{print $1}'
+Output: 
+8081
+8142
+8196
+8443
+8517
+8553
+
+
+Command: cat/proc/8081/status 
+
+kill -s STOP 8081
+kill -s CONT 8081
+kill -s KILL 8081
