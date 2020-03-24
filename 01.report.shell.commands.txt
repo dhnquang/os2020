@@ -1,0 +1,53 @@
+Report 1
+echo hello world
+hello world
+
+passwd
+Enter new UNIX password: 
+Retype new UNIX password: 
+
+date
+Thu Jan 16 09:54:50 UTC 2020
+ 
+hostname
+ubuntu
+
+arch
+x86_64
+
+uname -a
+Linux ubuntu 5.0.0-23-generic #24~18.04.1-Ubuntu SMP Mon Jul 29 16:12:28 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+dmesg
+[  124.683711] audit: type=1400 audit(1579142048.867:232): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/core/7270/usr/lib/snapd/snap-confine" pid=4440 comm="apparmor_parser"
+[  124.683713] audit: type=1400 audit(1579142048.867:233): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/core/7270/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=4440 comm="apparmor_parser"
+[  124.686697] audit: type=1400 audit(1579142048.871:234): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.core" pid=4442 comm="apparmor_parser"
+
+uptime
+ 09:55:52 up 24 min,  1 user,  load average: 0.30, 0.29, 0.35
+
+who am i
+it will be error.
+
+whoami
+ubuntu
+
+who
+ubuntu   :0           2020-01-16 09:32 (:0)
+
+id
+uid=999(ubuntu) gid=999(ubuntu) groups=999(ubuntu),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+
+last
+ubuntu   :0           :0               Thu Jan 16 09:32   still logged in
+reboot   system boot  5.0.0-23-generic Thu Jan 16 09:32   still running
+wtmp begins Thu Jan 16 09:32:20 2020
+
+finger
+Command 'finger' not found, but can be installed with:
+sudo apt install finger
+
+w
+03:00:15 up 28 min,  1 user,  load average: 0.28, 0.28, 0.34
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ubuntu   :0       :0               09:32   ?xdm?  42.59s  0.00s /usr/lib/gdm3/g
