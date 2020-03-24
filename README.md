@@ -10,5 +10,5 @@ Student Info
 =========================
 
 * Student Name: Đặng Hữu Nhật Quang
-* Student ID: Bi9-196
+* Student ID: Bi9-196 
 
