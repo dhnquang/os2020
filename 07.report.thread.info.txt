@@ -1,0 +1,12 @@
+Input: ps -o nlwp $(pidof firefox)
+Output: 
+NLWP
+  79
+  41
+  31
+  33
+  39
+  41
+   4
+  24
+
