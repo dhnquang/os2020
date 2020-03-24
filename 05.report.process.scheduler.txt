@@ -1,0 +1,54 @@
+proc/sched_debug
+
+Input: cat /proc/sched_debug | grep -e systemd | awk '{print $5}'
+Output: 
+120
+71
+121
+119
+120
+531
+49019
+1311
+
+proc/ID/sched
+
+Input: cat /proc/1/sched
+Output:
+systemd (1, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :       1056312.676003
+se.vruntime                                  :           566.815607
+se.sum_exec_runtime                          :          2360.846934
+se.nr_migrations                             :                 4353
+nr_switches                                  :                54340
+nr_voluntary_switches                        :                53893
+nr_involuntary_switches                      :                  447
+se.load.weight                               :              1048576
+se.runnable_weight                           :              1048576
+se.avg.load_sum                              :                   33
+se.avg.runnable_load_sum                     :                   33
+se.avg.util_sum                              :                33792
+se.avg.load_avg                              :                    0
+se.avg.runnable_load_avg                     :                    0
+se.avg.util_avg                              :                    0
+se.avg.last_update_time                      :        1056312675328
+se.avg.util_est.ewma                         :                   10
+se.avg.util_est.enqueued                     :                    0
+policy                                       :                    0
+prio                                         :                  120
+clock-delta                                  :                   38
+mm->numa_scan_seq                            :                    0
+numa_pages_migrated                          :                    0
+numa_preferred_nid                           :                   -1
+total_numa_faults                            :                    0
+current_node=0, numa_group_id=0
+numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
+
+Input: cat /proc/1857/sched | grep switches
+Output: 
+nr_switches                                  :               567108
+nr_voluntary_switches                        :               564879
+nr_involuntary_switches                      :                 2229
+
+
