@@ -5,7 +5,7 @@ void *Primenumber (void *args)
 	int n,x=0;
 	printf("Prime number from 2 to 1000000: \n");
 	for (n=2;n<=1000000;n++)
-	{		d=0;
+	{		x=0;
 		for (int i=1;i<=n;i++)
 		{
 			if (n% i==0)
@@ -17,11 +17,11 @@ void *Primenumber (void *args)
 		printf("%d\n",n);}
 }
 void *fibo(void *args)
-{	int a=1,b=1,z=0;
+{	int x=1,y=1,z=0;
 	printf("Fibonaci number sequence from 2 to 1000000: \n");
 	
 	while(z<=1000000){
-		z=a+y;
+		z=x+y;
 		x=y;
 		y=z;
 		printf("%d \n",z);
