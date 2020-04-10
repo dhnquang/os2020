@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<pthread.h>
+
 void *Primenumber (void *args)
  {
 	int n,x=0;
@@ -9,13 +10,15 @@ void *Primenumber (void *args)
 		for (int i=1;i<=n;i++)
 		{
 			if (n% i==0)
-				d++;
+				x++;
 			if (x>2) break;
 
 		}
 		if (x==2)
-		printf("%d\n",n);}
+		printf("%d\n",n);
+        }
 }
+
 void *fibo(void *args)
 {	int x=1,y=1,z=0;
 	printf("Fibonaci number sequence from 2 to 1000000: \n");
